@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MedBridge AI — Rural-Urban Teleconsult</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-mark"><i class="fa-solid fa-heart-pulse"></i></div>
+    <span>MedBridge <b>AI</b></span>
+  </div>
+  <div class="case-info">
+    <span class="case-label">Case</span>
+    <span class="case-id" id="caseId">—</span>
+  </div>
+</header>
+
+<nav class="stepper" id="stepper">
+  <!-- step dots injected by app.js, built from the sections below -->
+</nav>
+
+<main class="flow">
+
+  <!-- STEP 1 — Patient details (rural doctor, manual entry) -->
+  <section class="step-card" id="step-1" data-step="1" data-title="Patient details" data-owner="Rural doctor">
+    <header class="step-head">
+      <span class="step-num">1</span>
+      <div>
+        <h2>Patient details</h2>
+        <p>Entered manually by the rural doctor.</p>
+      </div>
+      <span class="step-check" id="check-1"><i class="fa-solid fa-circle-check"></i></span>
+    </header>
+    <div class="step-body form-grid">
+      <label>Full name<input type="text" id="pName" placeholder="Patient name"></label>
+      <label>Age<input type="number" id="pAge" min="0" placeholder="Age"></label>
+      <label>Gender
+        <select id="pGender"><option value="">Select</option><option>Female</option><option>Male</option><option>Other</option></select>
+      </label>
+      <label>Village / PHC<input type="text" id="pVillage" placeholder="Location"></label>
+      <label>Blood group
+        <select id="pBlood"><option value="">Unknown</option><option>O+</option><option>O-</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option></select>
+      </label>
+      <label>Contact<input type="tel" id="pPhone" placeholder="Phone number"></label>
+    </div>
+  </section>
+
+  <!-- STEP 2 — Situation, spoken in regional language, translated live -->
+  <section class="step-card" id="step-2" data-step="2" data-title="Situation" data-owner="Rural → Urban">
+    <header class="step-head">
+      <span class="step-num">2</span>
+      <div>
+        <h2>Situation &amp; symptoms</h2>
+        <p>Rural doctor speaks in their language — the urban doctor reads the English translation instantly.</p>
+      </div>
+      <span class="step-check" id="check-2"><i class="fa-solid fa-circle-check"></i></span>
+    </header>
+    <div class="step-body speech-grid">
+      <div class="speech-panel">
+        <div class="panel-label"><i class="fa-solid fa-user-doctor"></i> Rural doctor speaks</div>
+        <div class="mic-row">
+          <button class="mic-btn" id="micBtn"><i class="fa-solid fa-microphone"></i></button>
+          <div class="mic-meta">
+            <select id="sourceLang">
+              <option value="hi-IN">Hindi</option>
+              <option value="te-IN">Telugu</option>
+              <option value="ta-IN">Tamil</option>
+              <option value="mr-IN">Marathi</option>
+              <option value="bn-IN">Bengali</option>
+              <option value="kn-IN">Kannada</option>
+            </select>
+            <span id="micState">Tap to start recording</span>
+          </div>
+        </div>
+        <p class="live-text" id="rawTranscript">Transcript will appear here as you speak.</p>
+      </div>
+      <div class="speech-panel">
+        <div class="panel-label"><i class="fa-solid fa-hospital"></i> Urban doctor reads (English)</div>
+        <p class="live-text translated" id="translatedText">Waiting for input…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 3 — Shared document upload -->
+  <section class="step-card" id="step-3" data-step="3" data-title="Documents" data-owner="Rural doctor">
+    <header class="step-head">
+      <span class="step-num">3</span>
+      <div>
+        <h2>Upload documents</h2>
+        <p>Patient files and hospital protocol files, both feeding the RAG assistant.</p>
+      </div>
+      <span class="step-check" id="check-3"><i class="fa-solid fa-circle-check"></i></span>
+    </header>
+    <div class="step-body">
+
+      <div class="sub-block">
+        <h3><i class="fa-solid fa-user-injured"></i> Patient documents</h3>
+        <p class="sub-desc">X-rays, scans, or photos of this patient — shared instantly with the urban doctor and analyzed for the RAG assistant.</p>
+        <div class="dropzone" id="dropzone">
+          <input type="file" id="fileInput" accept="image/*,.pdf" multiple hidden>
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+          <p><b>Drag &amp; drop</b> patient files here, or click to browse</p>
+        </div>
+        <div class="doc-grid" id="docGrid"></div>
+      </div>
+
+      <div class="sub-block">
+        <h3><i class="fa-solid fa-book-medical"></i> Hospital reference documents</h3>
+        <p class="sub-desc">First-aid protocols and treatment guidelines — indexed into the RAG knowledge base so guidance is grounded in your hospital's own material.</p>
+        <div class="dropzone" id="refDropzone">
+          <input type="file" id="refFileInput" accept="image/*,.pdf,.txt" multiple hidden>
+          <i class="fa-solid fa-book"></i>
+          <p><b>Drag &amp; drop</b> protocol/reference files here, or click to browse</p>
+        </div>
+        <ul class="ref-list" id="refList"></ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STEP 4 — Immediate first-aid from RAG -->
+  <section class="step-card" id="step-4" data-step="4" data-title="Immediate first aid" data-owner="RAG assistant">
+    <header class="step-head">
+      <span class="step-num">4</span>
+      <div>
+        <h2>Temporary first-aid guidance</h2>
+        <p>Generated by the RAG assistant to stabilize the patient while awaiting the urban doctor's final decision.</p>
+      </div>
+      <span class="step-check" id="check-4"><i class="fa-solid fa-circle-check"></i></span>
+    </header>
+    <div class="step-body">
+      <button class="btn primary" id="btnFirstAid"><i class="fa-solid fa-kit-medical"></i> Generate temporary first-aid treatment</button>
+      <div class="rag-answer" id="firstAidBox">
+        <p class="placeholder">Upload at least one patient document to generate guidance.</p>
+      </div>
+      <div class="sources" id="firstAidSources"></div>
+    </div>
+  </section>
+
+  <!-- STEP 5 — Urban doctor review & decision -->
+  <section class="step-card" id="step-5" data-step="5" data-title="Urban review" data-owner="Urban doctor">
+    <header class="step-head">
+      <span class="step-num">5</span>
+      <div>
+        <h2>Urban doctor review</h2>
+        <p>Reviews the documents and RAG guidance, then approves, edits, or rejects it.</p>
+      </div>
+      <span class="step-check" id="check-5"><i class="fa-solid fa-circle-check"></i></span>
+    </header>
+    <div class="step-body">
+      <label class="review-label">Final treatment plan (editable)</label>
+      <textarea id="doctorNote" placeholder="RAG suggestion will be copied here for review — edit as needed."></textarea>
+      <div class="decision-row">
+        <button class="btn approve" data-decision="Approved"><i class="fa-solid fa-check"></i> Approve</button>
+        <button class="btn edit" data-decision="Edited"><i class="fa-solid fa-pen"></i> Mark as edited</button>
+        <button class="btn reject" data-decision="Rejected"><i class="fa-solid fa-xmark"></i> Reject</button>
+      </div>
+      <div class="decision-status" id="decisionStatus">No decision yet.</div>
+      <button class="btn primary full" id="btnSend"><i class="fa-solid fa-paper-plane"></i> Send decision to rural doctor</button>
+    </div>
+  </section>
+
+  <!-- STEP 6 — RAG medicine & treatment summary -->
+  <section class="step-card" id="step-6" data-step="6" data-title="Summary" data-owner="RAG assistant">
+    <header class="step-head">
+      <span class="step-num">6</span>
+      <div>
+        <h2>Medicine &amp; treatment summary</h2>
+        <p>Structured summary generated by the RAG assistant from the approved plan.</p>
+      </div>
+      <span class="step-check" id="check-6"><i class="fa-solid fa-circle-check"></i></span>
+    </header>
+    <div class="step-body">
+      <table class="summary-table" id="summaryTable">
+        <tbody>
+          <tr><th>Condition</th><td id="sumCondition">—</td></tr>
+          <tr><th>Symptoms</th><td id="sumSymptoms">—</td></tr>
+          <tr><th>Medicines</th><td id="sumMeds">—</td></tr>
+          <tr><th>Vitals to monitor</th><td id="sumVitals">—</td></tr>
+          <tr><th>Recommendation</th><td id="sumRecs">—</td></tr>
+        </tbody>
+      </table>
+      <div class="sources" id="summarySources"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>MedBridge AI — Azure Speech · Vision · Language · AI Search · OpenAI</p>
+</footer>
+
+<script src="https://aka.ms/csspeech/jsbrowserpackageraw"></script>
+<script src="app.js"></script>
+</body>
+</html>
