@@ -1,0 +1,230 @@
+MEDBRIDGE AI — SAMPLE HOSPITAL REFERENCE PROTOCOLS
+====================================================
+DEMO / PROTOTYPE CONTENT ONLY.
+This file is sample data for testing the RAG knowledge base in a student
+capstone project. It is NOT a validated clinical protocol. In any real
+deployment, replace this file with your hospital's own approved first-aid
+and treatment guidelines, reviewed by a licensed physician. Medicine
+choices and dosages here are general public first-aid knowledge only and
+must never be used for actual patient treatment.
+====================================================
+
+CONDITION: Fracture (suspected bone break)
+SYMPTOMS: Severe localized pain, swelling, deformity or abnormal angle of
+the limb, inability to bear weight or move the area, bruising, possible
+visible bone in open fractures.
+VITALS TO MONITOR: Pulse and skin color/temperature below the injury site
+(check for circulation loss), pain level, presence of numbness or
+tingling, blood pressure if blood loss is visible.
+TEMPORARY (FIRST-AID) TREATMENT: Do not attempt to straighten or realign
+the limb. Immobilize the area using a splint or rigid support and
+padding, keep the limb still, apply a cold pack wrapped in cloth to
+reduce swelling (avoid direct ice contact), elevate the limb if possible,
+control any external bleeding with clean pressure. Do not give food or
+water if surgery may be needed later.
+MEDICINES (GENERAL FIRST AID ONLY): Basic oral pain relief such as
+paracetamol may be used for pain if locally approved and no allergy or
+contraindication exists; avoid NSAIDs if a bleeding injury is suspected.
+PERMANENT / DEFINITIVE TREATMENT: X-ray confirmation, followed by closed
+reduction and casting for simple fractures, or surgical fixation (plates,
+screws, rods) for displaced or complex fractures, done by an orthopedic
+specialist.
+RECOMMENDATION: Refer to urban/specialist care for imaging and definitive
+management. Do not weight-bear on the limb until cleared.
+
+CONDITION: Fever
+SYMPTOMS: Body temperature above normal (typically over 38°C / 100.4°F),
+chills, sweating, headache, muscle aches, weakness, sometimes confusion
+in very high fevers.
+VITALS TO MONITOR: Body temperature (recheck every 2-4 hours), pulse
+rate, hydration status, respiratory rate, level of consciousness in
+young children or elderly patients.
+TEMPORARY (FIRST-AID) TREATMENT: Rest, plenty of fluids, light clothing,
+tepid sponging if temperature is very high, monitor for signs of
+dehydration or worsening symptoms.
+MEDICINES (GENERAL FIRST AID ONLY): Paracetamol (acetaminophen) is
+commonly used as a general fever reducer where locally approved;
+ibuprofen may be used as an alternative in adults without contraindication.
+Follow local dosing guidelines based on age and weight.
+PERMANENT / DEFINITIVE TREATMENT: Depends on underlying cause — antibiotics
+if a bacterial infection is confirmed, antimalarials if malaria is
+confirmed by test, supportive care and monitoring for viral causes.
+RECOMMENDATION: If fever persists beyond 3 days, exceeds 40°C, or is
+accompanied by rash, stiff neck, difficulty breathing, or confusion,
+refer immediately for urgent evaluation.
+
+CONDITION: Common cold
+SYMPTOMS: Runny or blocked nose, sneezing, sore throat, mild cough, mild
+fatigue, low-grade or no fever.
+VITALS TO MONITOR: Temperature, respiratory rate, oxygen saturation if
+available and breathing seems labored.
+TEMPORARY (FIRST-AID) TREATMENT: Rest, warm fluids, steam inhalation,
+saline nasal rinse, gargling warm salt water for sore throat.
+MEDICINES (GENERAL FIRST AID ONLY): Over-the-counter decongestants or
+antihistamines may relieve symptoms where locally approved; paracetamol
+for associated discomfort or mild fever.
+PERMANENT / DEFINITIVE TREATMENT: Usually self-limiting and resolves in
+7-10 days without specific treatment; antibiotics are not effective
+against viral colds and should not be used unless a bacterial
+complication is diagnosed.
+RECOMMENDATION: Refer only if symptoms worsen, persist beyond 10 days, or
+if breathing difficulty, high fever, or ear/sinus pain develops.
+
+CONDITION: Diarrhea and dehydration
+SYMPTOMS: Frequent loose or watery stools, abdominal cramping, nausea,
+possible vomiting, signs of dehydration (dry mouth, sunken eyes, reduced
+urination, dizziness, lethargy).
+VITALS TO MONITOR: Blood pressure (may drop with dehydration), pulse rate
+(may rise), skin turgor, urine output, level of alertness — especially
+critical to monitor closely in infants and elderly patients.
+TEMPORARY (FIRST-AID) TREATMENT: Oral rehydration solution (ORS) given in
+small frequent sips, continue breastfeeding for infants, avoid solid
+heavy foods initially, monitor for worsening dehydration signs.
+MEDICINES (GENERAL FIRST AID ONLY): Oral rehydration salts are the
+primary intervention; zinc supplementation is commonly recommended for
+children in many national protocols. Anti-diarrheal medicines are
+generally avoided in suspected infectious diarrhea without medical
+guidance.
+PERMANENT / DEFINITIVE TREATMENT: IV fluids for moderate-to-severe
+dehydration, antibiotics only if a specific bacterial cause is confirmed,
+investigation for underlying cause if diarrhea is prolonged or recurrent.
+RECOMMENDATION: Refer urgently if there is blood in stool, high fever,
+signs of severe dehydration, or if the patient is an infant, elderly, or
+immunocompromised.
+
+CONDITION: Hypertensive emergency (severely high blood pressure)
+SYMPTOMS: Severe headache, blurred vision, chest pain, shortness of
+breath, confusion, nosebleed, in severe cases seizures or loss of
+consciousness.
+VITALS TO MONITOR: Blood pressure (recheck frequently), pulse rate,
+respiratory rate, level of consciousness, pupil response if altered
+consciousness is present.
+TEMPORARY (FIRST-AID) TREATMENT: Keep the patient calm and seated or
+semi-reclined, loosen tight clothing, avoid sudden position changes,
+do not give any medication without protocol guidance, prepare for urgent
+transfer.
+MEDICINES (GENERAL FIRST AID ONLY): No self-administered medication
+should be given at first-aid level for a hypertensive emergency without
+direct medical instruction, due to risk of dangerous blood pressure
+swings.
+PERMANENT / DEFINITIVE TREATMENT: Controlled IV or oral antihypertensive
+therapy titrated by a physician, investigation for underlying cause
+(kidney disease, pregnancy-related hypertension, medication
+non-adherence), long-term blood pressure management plan.
+RECOMMENDATION: Treat as a medical emergency — refer for immediate
+specialist care; this is not a condition to manage at first-aid level
+alone.
+
+CONDITION: Asthma attack
+SYMPTOMS: Wheezing, shortness of breath, chest tightness, coughing,
+difficulty speaking in full sentences, visible distress or use of
+accessory breathing muscles.
+VITALS TO MONITOR: Respiratory rate, oxygen saturation if available,
+pulse rate, ability to speak, level of consciousness in severe attacks.
+TEMPORARY (FIRST-AID) TREATMENT: Help the patient sit upright, stay calm,
+loosen tight clothing, assist with their prescribed reliever inhaler if
+they have one, avoid exertion, monitor closely for worsening.
+MEDICINES (GENERAL FIRST AID ONLY): A fast-acting (reliever) inhaler such
+as salbutamol, if already prescribed to the patient, may be used per
+their existing prescription; do not give a new inhaler prescription at
+first-aid level.
+PERMANENT / DEFINITIVE TREATMENT: Long-term inhaled corticosteroids and
+bronchodilator therapy managed by a physician, identification and
+avoidance of triggers, an individualized asthma action plan.
+RECOMMENDATION: Refer urgently if there is no improvement after inhaler
+use, lips or fingertips turn blue, or the patient cannot speak in full
+sentences.
+
+CONDITION: Minor wound or cut
+SYMPTOMS: Broken skin, bleeding, pain at the site, possible surrounding
+redness or swelling if infected.
+VITALS TO MONITOR: Amount and rate of bleeding, signs of infection
+(increasing redness, warmth, pus, fever) over following days.
+TEMPORARY (FIRST-AID) TREATMENT: Clean the wound with clean water, apply
+gentle direct pressure with a clean cloth to stop bleeding, apply a
+sterile dressing, keep the wound clean and dry.
+MEDICINES (GENERAL FIRST AID ONLY): A topical antiseptic may be applied
+per local protocol; oral pain relief such as paracetamol if needed.
+PERMANENT / DEFINITIVE TREATMENT: Sutures or wound closure for deep cuts,
+tetanus vaccination review, antibiotics only if infection develops.
+RECOMMENDATION: Refer if the wound is deep, won't stop bleeding, shows
+signs of infection, or if the patient's tetanus vaccination is not
+up to date.
+
+CONDITION: Burns (minor to moderate)
+SYMPTOMS: Redness, pain, blistering, swelling at the burn site; in more
+severe burns, white or charred skin and reduced pain sensation.
+VITALS TO MONITOR: Extent and depth of the burn (percentage of body
+surface area), pain level, signs of shock (rapid pulse, low blood
+pressure) in larger burns.
+TEMPORARY (FIRST-AID) TREATMENT: Cool the burn under clean running water
+for 10-20 minutes (do not use ice), remove tight clothing/jewelry near
+the area before swelling starts, cover loosely with a clean non-stick
+dressing, do not apply butter, oil, or toothpaste.
+MEDICINES (GENERAL FIRST AID ONLY): Oral pain relief such as paracetamol
+for discomfort; do not apply any ointment not approved by local protocol
+until assessed.
+PERMANENT / DEFINITIVE TREATMENT: Specialist wound care or skin grafting
+for severe/deep burns, IV fluid management for large burns, infection
+monitoring and dressing changes over time.
+RECOMMENDATION: Refer immediately for burns larger than a hand's size,
+burns on the face/hands/genitals, or any burn with charred or white skin.
+
+CONDITION: Chest pain (possible cardiac event)
+SYMPTOMS: Chest pressure, tightness, or pain (may radiate to arm, jaw, or
+back), shortness of breath, sweating, nausea, lightheadedness.
+VITALS TO MONITOR: Pulse rate and rhythm, blood pressure, respiratory
+rate, oxygen saturation if available, level of consciousness.
+TEMPORARY (FIRST-AID) TREATMENT: Keep the patient calm and seated or
+semi-reclined, loosen tight clothing, do not let them exert themselves,
+prepare for urgent transfer — this is a time-critical emergency.
+MEDICINES (GENERAL FIRST AID ONLY): Chewable aspirin may be considered
+per local emergency protocol only if there is no known allergy or
+bleeding risk and local guidance permits it; this should not be given
+without protocol authorization.
+PERMANENT / DEFINITIVE TREATMENT: ECG and cardiac enzyme testing,
+clot-dissolving therapy or emergency angioplasty for confirmed heart
+attack, ongoing cardiac medication and monitoring.
+RECOMMENDATION: Treat as a medical emergency and arrange the fastest
+possible transfer to specialist cardiac care; do not delay for further
+first-aid steps.
+
+CONDITION: Suspected snake bite
+SYMPTOMS: Puncture marks, localized pain and swelling, possible nausea,
+difficulty breathing, drooping eyelids, difficulty swallowing, bleeding
+from gums or wounds in some envenomations.
+VITALS TO MONITOR: Respiratory rate and effort, blood pressure, pulse,
+swelling progression at the bite site, level of consciousness.
+TEMPORARY (FIRST-AID) TREATMENT: Keep the patient still and calm, keep
+the bitten limb immobilized and below heart level, remove tight
+clothing/jewelry near the site, do not cut, suck, or apply ice to the
+wound, do not apply a tight tourniquet — use a firm but not restrictive
+pressure bandage if trained to do so per local protocol.
+MEDICINES (GENERAL FIRST AID ONLY): No first-aid medication should be
+self-administered; antivenom must only be given by trained medical staff
+after assessment.
+PERMANENT / DEFINITIVE TREATMENT: Species-appropriate antivenom
+administration, supportive care for breathing or bleeding complications,
+monitoring in a medical facility for at least 24 hours.
+RECOMMENDATION: Treat as a medical emergency in all cases — transfer
+immediately regardless of symptom severity, as effects can worsen
+rapidly.
+
+CONDITION: Diabetic emergency (suspected hypoglycemia)
+SYMPTOMS: Sudden sweating, shakiness, confusion, irritability, rapid
+heartbeat, hunger, in severe cases loss of consciousness or seizures.
+VITALS TO MONITOR: Blood glucose level if a glucometer is available,
+pulse rate, level of consciousness, repeat glucose check after
+treatment.
+TEMPORARY (FIRST-AID) TREATMENT: If the patient is conscious and able to
+swallow, give a fast-acting sugar source (juice, sugar water, glucose
+tablets); recheck alertness after 10-15 minutes; if unconscious, do not
+give anything by mouth and seek emergency care immediately.
+MEDICINES (GENERAL FIRST AID ONLY): Oral glucose/sugar for conscious
+patients; glucagon injection or IV glucose is a medical-staff-only
+intervention for unconscious patients.
+PERMANENT / DEFINITIVE TREATMENT: Review and adjustment of the patient's
+diabetes medication regimen, diabetes education, ongoing glucose
+monitoring plan.
+RECOMMENDATION: Refer urgently if the patient does not regain full
+alertness after sugar intake, or immediately if unconscious.
